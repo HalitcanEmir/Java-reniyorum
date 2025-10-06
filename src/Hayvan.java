@@ -22,6 +22,7 @@ public class Hayvan {
         System.out.println("Hyavan" + hız + "İle haraket ediyor");
 
 
+        System.out.println("Hayvanların Özellikleri");
     }
 
 
