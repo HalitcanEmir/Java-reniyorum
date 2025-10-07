@@ -1,29 +1,33 @@
 public class Hayvan {
 
-    private String isimm;
-
+    private String isim;
     private int kilo;
-
     private int boy;
+    private int bacakSayisi;
 
-    private int bacak_sayisi;
-
-    public Hayvan(String isimm, int kilo, int boy, int bacak_sayisi) {
-        this.isimm = isimm;
+    public Hayvan(String isim, int kilo, int boy, int bacakSayisi) {
+        this.isim = isim;
         this.kilo = kilo;
         this.boy = boy;
-        this.bacak_sayisi = bacak_sayisi;
+        this.bacakSayisi = bacakSayisi;
     }
-    public void yemek_ye() {
-        System.out.println("Hayvan şu anda yemek yiyor");
+
+    public void yemekYe() {
+        System.out.println(isim + " şu anda yemek yiyor...");
     }
-    public void harakete_gec(int hız) {
 
-        System.out.println("Hyavan" + hız + "İle haraket ediyor");
-
-
-        System.out.println("Hayvanların Özellikleri");
+    public void hareketEt(int hiz) {
+        System.out.println(isim + " şu anda " + hiz + " km/s hızla hareket ediyor.");
     }
+
+    public void bilgilerigoster() {
+        System.out.println("İsim: " + isim);
+        System.out.println("Kilo: " + kilo);
+        System.out.println("Boy: " + boy);
+        System.out.println("Bacak Sayısı: " + bacakSayisi);
+    }
+}
+
 
 
 }
