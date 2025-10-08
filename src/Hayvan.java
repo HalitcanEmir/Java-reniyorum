@@ -1,5 +1,4 @@
 public class Hayvan {
-
     private String isim;
     private int kilo;
     private int boy;
@@ -13,21 +12,17 @@ public class Hayvan {
     }
 
     public void yemekYe() {
-        System.out.println(isim + " şu anda yemek yiyor...");
+        System.out.println(isim + " şu anda yemek yiyor.");
     }
 
     public void hareketEt(int hiz) {
-        System.out.println(isim + " şu anda " + hiz + " km/s hızla hareket ediyor.");
+        System.out.println(isim + " " + hiz + " km/s hızla hareket ediyor.");
     }
 
-    public void bilgilerigoster() {
+    public void bilgileriGoster() {
         System.out.println("İsim: " + isim);
-        System.out.println("Kilo: " + kilo);
-        System.out.println("Boy: " + boy);
+        System.out.println("Kilo: " + kilo + " kg");
+        System.out.println("Boy: " + boy + " cm");
         System.out.println("Bacak Sayısı: " + bacakSayisi);
     }
-}
-
-
-
 }
